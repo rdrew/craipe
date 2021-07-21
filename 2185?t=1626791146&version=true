@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>Redmine</title>
+  <meta name="description" content="Easy Redmine">
+  <meta name="keywords" content="issue,bug,tracker,Easy Redmine">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="application-name" content="Easy Redmine">
+  <meta name="msapplication-config" content="browserconfig.xml">
+  <meta name="theme-color" content="#0080e6">
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="tD1awvX1+29lAHP7D3ilrv4s2/i6IyvEA3lpwZlSJosjQvgfDdySeZNE+inOzuu0rY+yGMJs4Mi1w+U8Nt6WZg==" />
+  <link rel="apple-touch-icon" type="image/x-icon" href="/assets/favicon-c14c7eeca3c1ef7c070ad52f27bad3a164df4fcb93d005b7dc248f4d4f78ece8.ico?1626859548" />
+  <link rel="icon" type="image/x-icon" href="/assets/favicons/android-icon-192x192-57bd616c7d97854ce7c2c930629678748424ef61ccf4d0ce0c53f7da5e5e2442.png?1538149387" sizes="192x192" />
+  <link rel="apple-touch-icon" type="image/x-icon" href="/assets/favicons/apple-icon-precomposed-bc2ea6a6f628ea9675aec1f45b47ac5fad5342ad173c955d4ec11d091ab63e9d.png?1538149387" />
+  
+  <link rel="stylesheet" media="screen" href="/assets/easy_jquery_ui/jquery-ui-bbedca662ccfe8cedc65c98236a1333e9874ceddd3ee8972d12428d87ccdb3fb.css?1538149388" />
+  
+  <link rel="stylesheet" media="screen" href="/assets/easy_theme-95cc8e007341e7dc0435a765546deb3736dc6889a5816f0ce9d793f6594d659d.css?1538149579" />
+<link rel="stylesheet" media="screen" href="/assets/easy_extensions-e0f75167be1110016c3a77d8faa1a4c81d97ad1384e787e28593877d4e755dff.css?1538149579" />
+<script src="/assets/easy_extensions_blocking-7d84907b1dfc498f1d8720ef6834252bf36465fd385609322f575f10e3031ed4.js?1538149579"></script>
+<script src="/assets/easy_extensions-974c4ab1de30abb3cf6928c7e6df4c7f1b1fd047862975dc66a2ad600d3b450d.js?1538149579" defer="defer"></script>
+
+  <script type="application/javascript">
+//<![CDATA[
+  EasyGem.schedule.late(function(){warnLeavingUnsaved('The current page contains unsaved text that will be lost if you leave this page.');  }, 0);
+//]]>
+</script>
+  <script src="/assets/jquery.ui.touch-punch-8e753a5d618654bf56cbb618bbd7c33bb783969d0df42978f31d67249dbd1ae1.js?1538149387" defer="defer"></script>
+  <script type="application/javascript">
+  EasyGem.module.urls["easyAgile"]="https://easy.vre.upei.ca/assets/agile/easy_agile-3354682575c41d5e890dca5882966c8a54e82f2cb93cb4cc93681e79542b7781.js?1538149387";
+</script>
+
+  <script type="text/javascript">
+    EASY.schedule.main(function variablesForEE() {
+      ERUI.isMobile = false
+      if (top.location !== self.location) {
+        $("#header, #top-menu").remove();
+        $("body").addClass('in-iframe');
+      }
+      shortcut.add('Alt+Shift+N', function () {
+        window.location.href = '/issues/new';
+      });
+      shortcut.add('Alt+Shift+F', EASY.utils.toggleSidebar);
+
+      moment.locale('en');
+    }, 5);
+
+    window.easySettings = {"chart_numbers_format":false};
+    window.momentjsFormat = 'DD MMM YYYY';
+    window.urlPrefix = 'https://easy.vre.upei.ca';
+    window.I18n = {"titleInlineEditable":"Click on the pencil icon to edit","titleInlineEditableAll":"Click on the pencil icon to edit all items","buttonSave":"Save","buttonCancel":"Cancel","buttonClear":"Clear","meetingDestroyConfirmation":"Are you sure you want to delete this meeting?","meetingAccept":"Accept","meetingDecline":"Decline","textWarnLeavingUnsaved":"The current page contains unsaved text that will be lost if you leave this page.","meetingEdit":"Edit","textPleaseFillName":"Please fill the name","fieldPossibleValues":"Possible values","labelFilterPlural":"Filters","labelNoFiltersDetected":"No-filters detected","labelLoading":"Loading...","labelChangePreviousPeriod":"Change to the previous period","labelCopied":"copied","buttonAdd":"Add"};
+    (function () {
+      var current = {"id":2,"login":"","firstname":"","lastname":"Anonymous","mail":null,"avatar_url":""};
+      current.firstName = current.firstname;
+      current.lastName = current.lastname;
+      window.EASY.currentUser = current;
+      window.easyClasses = {User: {current: current}};
+    })();
+
+    EASY.schedule.main(function otherVariablesForEE() {
+      window.saveButtonSettingsUrl = '/users/save_button_settings';
+      window.easyClasses.User.current = new easyClasses.User(EASY.currentUser);
+
+      EASY.backgroundServices.active = [];
+    }, 5);
+  </script>
+  
+
+   <link rel="stylesheet" media="screen" href="/plugin_assets/easy_redmine/stylesheets/easy_redmine.css?1538149668" />
+  <script src="/javascripts/jstoolbar/jstoolbar-textile.min.js?1538149390"></script><script src="/javascripts/jstoolbar/lang/jstoolbar-en.js?1538149390"></script><script>
+//<![CDATA[
+var wikiImageMimeTypes = ["image/gif","image/jpeg","image/png","image/tiff","image/x-ms-bmp"];
+//]]>
+</script><link rel="stylesheet" media="screen" href="/stylesheets/jstoolbar.css?1538149390" />
+  
+</head>
+
+<body class="controller-account action-login desktop-device">
+
+<div id="wrapper">
+
+
+  <div id="wrapper2">
+    <div id="wrapper3">
+
+        <div id="top-menu">
+    
+    <div id="logo"><a title="Click to go to my page." href="/"></a></div>
+
+
+    <div id="loggedas">
+      
+      
+    </div>
+
+    <ul id="top-menu-container">
+    </ul>
+
+
+
+    <div id="top-menu-quick-search-container">
+      <a href="#" class="mobile-toggle-button js-flyout-menu-toggle-button"></a>
+    </div>
+
+  </div>
+  <script type="text/javascript">
+    EASY.schedule.late(function () {
+      $('#top_quick_search').submit(function(e) {
+        $('input.hidden_q').val($('#search_q_autocomplete').val());
+      });
+    });
+  </script>
+
+
+      
+
+      <div id="main">
+        
+
+        <div id="content">
+          
+          <div class="easy-content-page">
+            
+<h1>Welcome to Easy Redmine</h1>
+<table id="login_form_container">
+  <tr>
+    <td>
+      <div id="login-form">
+        <form onsubmit="return keepAnchorOnSignIn(this);" action="/login" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="/0RABTi1B2ylEv8aTwWy4+jYMwV++zdSwxZbHZelluRoO+LYwJxuelNWdsiOs/z5u3ta5Qa0/F51rNfgOCkmCQ==" />
+            
+            <input type="hidden" name="back_url" value="https://easy.vre.upei.ca/attachments/2185?t=1626791146&amp;version=true" />
+            <table>
+              <tr>
+                <td class="hidden">
+                  <div><label for="username" class="icon-user"></label></div>
+                </td>
+                <td colspan="2">
+                  <div><input type="text" name="username" id="username" placeholder="Login" tabindex="1" /></div>
+                </td>
+              </tr>
+              <tr>
+                <td class="hidden">
+                  <div><label for="password" class="icon-lock"></label></div>
+                </td>
+                <td colspan="2">
+                  <div><input type="password" name="password" id="password" placeholder="Password" tabindex="2" /></div>
+                </td>
+              </tr>
+              <tr>
+                <td id="lost_password_field">
+                  <a href="/account/lost_password">Lost password retrieve</a>
+                      <a href="/account/register">Register</a>
+                </td>
+              </tr>
+              <tr id="login_submit_field" class="centered-fields">
+                <td colspan="2">
+                  <button type="submit" name="login" value="" tabindex="5"><i class="icon icon-unlock"></i> Login</button>
+                </td>
+              </tr>
+            </table>
+</form>        <br/>
+        
+        <div id="easy_quote_container" style="display:none">
+
+        </div>
+      </div>
+    </td>
+  </tr>
+</table>
+
+    <script type="application/javascript">
+//<![CDATA[
+  EasyGem.schedule.late(function(){$('#username').focus();  }, 0);
+//]]>
+</script>
+    <script type="text/javascript">
+      EASY.schedule.main(function(){
+        $.ajax({url: '/quotes.text', type:'GET', noLoader: true, success: function(response) {
+          $("#easy_quote_container").show().html($("<div/>").append(response));
+        }
+        });
+      });
+    </script>
+
+            
+</div>        </div>
+      </div>
+
+    </div>
+
+    <div id="ajax-indicator" style="display:none;">
+  <span>Loading...</span></div>
+<div id="ajax-modal" style="display:none;"></div>
+<div id="easy_servicebar_component" style="display:none;"><span id="easy_servicebar_component_beak"><a id="easy_servicebar_close_toggler" class="icon-close" href="javascript:void(0);"></a></span><div id="easy_servicebar_component_body"></div></div>
+<div class="clear"></div>
+<!-- __EP_.O.K.__ SITE: easy.vre.upei.ca -->
+
+
+  </div>
+</div>
+
+   
+<span id="cbp_images_form">
+  <a href="#" onclick="cbImagePaste.showPasteDialog(this); return false;; return false;" class="file_selector">Add picture from clipboard</a>
+  <span id="cbp_image_fields"></span>
+</span>
+
+<!-- input field span inspired by redmine/app/views/attachments/_form.html.erb -->
+<span id="cbp_image_field" style="display:none">
+  <span id="cbp_attach_thumbnail_box">
+    <img id="cbp_attach_thumbnail"/>
+  </span>
+  <input type="hidden" name="attachments[nnnnn][data]" id="cbp_image_data" value="" />
+  <input type="text" name="attachments[nnnnn][name]" value="" class="name" maxlength="50" />
+  <a title="Copy image and thumbnail link" id="cbp_link_btn" class="icon icon-link attachments__button--copy_link" href="#"></a>
+    <input type="text" name="attachments[nnnnn][description]" value="" class="description" maxlength="255" placeholder="Optional description" />
+  <a href="#" onclick="cbImagePaste.removeImageField(this); return false;" title="Delete" class="icon icon-delete attachments__button--remove"></a>
+</span>
+
+<!-- clipboard paste dialog -->
+<div id="cbp_paste_dlg" title="Add picture from clipboard" style="display:none">
+  <script type="text/javascript">
+    EASY.schedule.late(function () {
+      // translated labels go here (inside namespace)
+      (function(cbImagePaste, $, undefined) {
+        cbImagePaste.cbp_txt_crop_box        = "crop box:  x={1}  y={2}  width={3}  height={4}";
+        cbImagePaste.cbp_txt_print           = "Use PrintScreen key and then Ctrl+V.";
+        cbImagePaste.cbp_txt_select          = "Use mouse to select specific part of the image.";
+        cbImagePaste.cbp_txt_deselect        = "Click outside selection to deselect.";
+        cbImagePaste.cbp_txt_empty_cb        = "The clipboard is empty. Try PrintScreen key again.";
+        cbImagePaste.cbp_txt_no_image_cb     = "No image found in the clipboard. Try PrintScreen key again.";
+        cbImagePaste.cbp_txt_no_image_pst    = "No image has been pasted yet. Insert some first.";
+        cbImagePaste.cbp_txt_too_many_files  = "Cannot add another attachment. Number of file attachments allowed for one update is limited to 10.";
+        cbImagePaste.cbp_txt_wrong_browser   = "Your current browser cannot paste pictures. Please use Mozilla Firefox ver. >= 5, Google Chrome ver. >= 13 or Internet Explorer ver. >= 11.";
+        cbImagePaste.cbp_txt_btn_ok          = "Ok";
+        cbImagePaste.cbp_txt_btn_cancel      = "Cancel";
+        cbImagePaste.cbp_txt_too_big_image   = "This file cannot be uploaded because it exceeds the maximum allowed file size (50 MB, setting is in Administration > Settings > General)";
+        cbImagePaste.cbp_max_attach_size     = 52428800;
+        cbImagePaste.cbp_max_attachments     = 10;
+        cbImagePaste.cbp_min_chrome_ver      = 535;
+        cbImagePaste.cbp_min_firefox_ver     = 5;
+        cbImagePaste.cbp_min_ie_ver          = 11;
+        cbImagePaste.cbp_act_update_id       = "442";
+      }(window.cbImagePaste = window.cbImagePaste || {}, $));
+    });
+  </script>
+
+  <div id="cbp_header_box">
+    <!-- canvas id="cbp_thumbnail" width="60" height="60"></canvas -->
+    <div id="cbp_instructions">&nbsp;</div>
+  </div>
+  <div id="cbp_panel_box">
+    <!-- place for pasted image editor -->
+  </div>
+</div>
+
+<!-- dialog to copy image link for wiki -->
+<div id="cbp_link_dlg" title="Copy image and thumbnail link" style="display:none">
+  <input type="text" id="cbp_image_link" readonly />
+  <p/>
+  <input type="text" id="cbp_thumbnail_link" readonly />
+</div>
+
+<script>
+//<![CDATA[
+EASY.datepickerOptions={dateFormat: 'yy-mm-dd', firstDay: 0,  onSelect: function(dateText, inst){$('#'+ inst.id).change()},showOn: 'button', buttonImageOnly: false, buttonText: 'C', showButtonPanel: true, showWeek: true, showOtherMonths: true, selectOtherMonths: true, changeMonth: true, changeYear: true, beforeShow: function(){beforeShowDatePicker(arguments)}};
+//]]>
+</script><script>
+//<![CDATA[
+EASY.schedule.main(function(){$.easyquery.filters.prototype.options.i18n = {  yes: 'yes',  no: 'no',  label_day_plural: 'days',  label_date_from: 'From',  label_date_to: 'To',  operators: {"=":"is","!":"is not","o":"open","c":"closed","!*":"none","*":"any","\u003e=":"\u003e=","\u003c=":"\u003c=","\u003e\u003c":"between","\u003ct+":"in less than","\u003et+":"in more than","\u003e\u003ct+":"in the next","t+":"in","t":"today","ld":"yesterday","w":"this week","lw":"last week","l2w":"translation missing: en.{:count=\u003e2}","m":"this month","lm":"last month","y":"this year","\u003et-":"less than days ago","\u003ct-":"more than days ago","\u003e\u003ct-":"in the past","t-":"days ago","~":"contains","!~":"doesn't contain","^~":"starts with","$~":"ends with","=p":"any tasks in project","=!p":"any tasks not in project","!p":"no tasks in project","*o":"any open tasks","!o":"no open tasks","\u003edd":"after due date","only=":"only"}};})
+//]]>
+</script>      
+      <link rel="stylesheet" media="print" href="/assets/easy_print-cfde400ed7d078c5a4af46b412caa0e0c1b354dafe5f5e73e9d65d5c6f3e24bd.css?1538149579" />
+
+</body>
+</html>

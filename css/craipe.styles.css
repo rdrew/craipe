@@ -1,0 +1,55 @@
+img, media {
+  max-width: 100%;
+
+}
+button.search-dropdown-toggle.button {
+  display: none;
+
+
+}
+ul.language-switcher-locale-url {
+  display: flex;
+  align-items:center;
+  display: flex;
+  align-items: center;
+  margin: 0;
+
+
+}
+ul.language-switcher-locale-url li a {
+
+
+  colour:#fff;
+}
+.active .language-link {
+  text-decoration:underline;
+  margin:10px;
+
+}
+.active .language-link {
+  text-decoration: underline;
+  margin: 10px;
+  font-weight: bold !important;
+
+}
+footer.node__submitted {
+  display: none;
+
+}
+a.language-link {
+  color: #fff;
+
+}
+.book-navigation__links {
+  font-family: "IM Fell Great Primer SC", serif;
+  font-size: 1.2rem;
+  border-top: 1px solid #584938;
+  display: inline-block;
+  padding: 1rem;
+  border-bottom: 1px solid #584938;
+  margin-bottom: 1rem;
+  width: 100%;
+
+}
+/* No files to import found in partials/components/**\/* */
+.book-navigation ul.menu {padding: 0;margin: 0;list-style: inherit;position: relative;display: -ms-flexbox;display: block;-ms-flex-wrap: wrap;flex-wrap: wrap;border-top: 1px solid #584a38;}

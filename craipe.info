@@ -1,0 +1,29 @@
+name = craipe
+description = Please provide a description for your theme.
+base theme = islandarchives
+screenshot = screenshot.png
+engine = phptemplate
+core = 7.x
+
+; ========================================
+; Stylesheets
+; ========================================
+;stylesheets[all][] = css/craipe.reset.css
+stylesheets[all][] = css/craipe.styles.css
+stylesheets[all][] = hacks.css
+
+; ========================================
+; Scripts
+; ========================================
+scripts[] = js/craipe.behaviors.js
+
+; ========================================
+; Regions
+; ========================================
+regions[navigation] = Navigation
+regions[header] = Header
+regions[search_dropdown] = Search Dropdown Panel
+regions[help] = Help
+regions[content] = Content
+regions[sidebar_first] = First Sidebar
+regions[footer] = Footer
